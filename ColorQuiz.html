@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>Color Quiz</title>
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8"/>
+		<meta name="description" content="Surya Rasmi Color Quiz"/>
+		<meta name="author" content="Surya Rasmi"/>
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Oregano' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="CSS/ColorQuiz.css"/>
+		<script type="text/javascript" src="JS/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="JS/ColorQuiz.js"></script>
+	
+	</head>
+	<body>
+		<section class="welcome overlay">
+			<div class="content">
+				<header>
+					<h1>Welcome to Color Quiz</h1>
+				</header>
+				
+				<div class="text">
+					<p>
+						Are you good at picking colors.?<br/>
+						Lets see how good are you at picking the colors..<br/>
+						There are 12 questions and each question has 5 choices, <br/>
+						All you need to do is pick the color corresponding to the color name.<br/>
+						So, Are you ready.?
+					</p>
+					<p class="game-container"><a class="game" href="#">Click Here to Start</a></p>
+				</div>
+				
+			</div>
+		</section>
+		<section class="quizArea"> <!-- App Section -->
+			<div id="question-container">
+				<h2 id="question"></h2>
+			</div>
+			
+			<ul id="choices">
+				<li id="choice1"></li>
+				<li id="choice2"></li>
+				<li id="choice3"></li>
+				<li id="choice4"></li>
+				<li id="choice5"></li>
+			</ul>
+		</section>
+
+		<section class="result overlay" id="modal">
+			<div class="content">
+				<ul class="blocks">
+					<li id="1"></li>
+					<li id="2"></li>
+					<li id="3"></li>
+					<li id="4"></li>
+					<li id="5"></li>
+					<li id="6"></li>
+					<li id="7"></li>
+					<li id="8"></li>
+					<li id="9"></li>
+					<li id="10"></li>
+					<li id="11"></li>
+					<li id="12"></li>
+				</ul>
+				<div class="message">
+					<p><span id="feedback">You Got it!</span></p>
+					<p><span id="qNumber">3 / 10</span></p>
+					<p id="next">Continue</p>
+				</div>
+			</div>
+		</section>
+
+	</body>
+</html>
